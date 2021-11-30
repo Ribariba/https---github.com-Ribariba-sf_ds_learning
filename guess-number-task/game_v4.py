@@ -10,7 +10,7 @@ def random_predict(number):
     min_number = 0
     while True:
         count += 1
-        predict_number = (max_number + min_number) // 2 #
+        predict_number = (max_number + min_number) // 2 
         if predict_number == number:
             return count
         elif predict_number > number: #перезаписываем границы диапозона, пока не отгадаем число
