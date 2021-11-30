@@ -4,15 +4,16 @@ import numpy as np
 
 number = np.random.randint(1, 101) # загадываем число
 
-count = 0
+count = 0 #счетчик попыток
 
-max_number = 101 
+max_number = 101  #исходные границы
 min_number = 0
 
-    
-while True:                                   #перезаписываем верхнюю и нижнию границу, пока не отгадаем число
+#перезаписываем границы диапозона, пока не отгадаем число
+
+while True:
     count += 1
-    predict_number = (max_number + min_number) // 2
+    predict_number = (max_number + min_number) // 2 
     if predict_number == number:
         print(f'Отгадали число {number} за {count} попыток!') 
         break
